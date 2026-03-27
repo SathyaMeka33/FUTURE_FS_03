@@ -1,3 +1,10 @@
 [2026-03-27] Created README.md
 - Added project documentation for SkyFit Gym.
 - Included overview, tech stack, structure, features, run steps, notes, and future improvements.
+
+[2026-03-27] Git publish attempt for Future_FS_03
+- Initialized git repository in skyfit-gym.
+- Created branch: main.
+- Added all project files and created initial commit: "Initial commit".
+- Attempted GitHub repository creation and push.
+- Blocked because GitHub CLI (gh) is not installed and no GitHub token is present in environment.
