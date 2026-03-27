@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register – SkyFit Gym Peddapuram | Join Now</title>
+  <meta name="description" content="Register for a SkyFit Gym membership. Choose from monthly, quarterly, or yearly plans and start your fitness journey today in Peddapuram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-dumbbell"></i>
+        <span>Sky<span class="accent">Fit</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#membership" class="nav-link">Plans</a></li>
+        <li><a href="index.html#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="index.html#bmi" class="nav-link">BMI</a></li>
+        <li><a href="diet.html" class="nav-link">Diet</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="register.html" class="nav-link active">Register</a></li>
+      </ul>
+      <a href="register.html" class="nav-cta">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Register Hero -->
+  <section class="register-hero">
+    <div class="register-hero-bg"></div>
+    <div class="container">
+      <div class="register-hero-content animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-user-plus"></i> Membership Registration</span>
+        <h1 class="section-title">Join <span class="accent-text">SkyFit</span> Gym</h1>
+        <p class="section-desc">Fill in your details below to register for a membership. Start your transformation today!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section class="register-section">
+    <div class="container">
+      <div class="register-card animate-on-scroll">
+        <form id="registerForm" class="register-form" novalidate>
+          <!-- Plan Selection -->
+          <div class="form-section">
+            <h3 class="form-section-title"><i class="fas fa-crown"></i> Select Your Plan</h3>
+            <div class="plan-selector">
+              <label class="plan-option" id="planMonthly">
+                <input type="radio" name="plan" value="monthly">
+                <div class="plan-option-content">
+                  <div class="plan-option-icon"><i class="fas fa-calendar-day"></i></div>
+                  <div class="plan-option-info">
+                    <span class="plan-option-name">Monthly</span>
+                    <span class="plan-option-price">₹1,000<small>/month</small></span>
+                  </div>
+                  <div class="plan-check"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </label>
+              <label class="plan-option" id="planQuarterly">
+                <input type="radio" name="plan" value="quarterly">
+                <div class="plan-option-content">
+                  <span class="plan-option-badge">Popular</span>
+                  <div class="plan-option-icon"><i class="fas fa-calendar-alt"></i></div>
+                  <div class="plan-option-info">
+                    <span class="plan-option-name">Quarterly</span>
+                    <span class="plan-option-price">₹2,500<small>/3 months</small></span>
+                  </div>
+                  <div class="plan-check"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </label>
+              <label class="plan-option" id="planYearly">
+                <input type="radio" name="plan" value="yearly">
+                <div class="plan-option-content">
+                  <div class="plan-option-icon"><i class="fas fa-calendar"></i></div>
+                  <div class="plan-option-info">
+                    <span class="plan-option-name">Yearly</span>
+                    <span class="plan-option-price">₹8,000<small>/year</small></span>
+                  </div>
+                  <div class="plan-check"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </label>
+            </div>
+            <div class="form-error" id="planError">Please select a membership plan</div>
+          </div>
+
+          <!-- Personal Details -->
+          <div class="form-section">
+            <h3 class="form-section-title"><i class="fas fa-user"></i> Personal Details</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="regName">Full Name *</label>
+                <input type="text" id="regName" placeholder="e.g. Ravi Kumar" required>
+              </div>
+              <div class="form-group">
+                <label for="regEmail">Email Address *</label>
+                <input type="email" id="regEmail" placeholder="e.g. ravi@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="regPhone">Phone Number *</label>
+                <input type="tel" id="regPhone" placeholder="e.g. +91 9876543210" required>
+              </div>
+              <div class="form-group">
+                <label for="regDob">Date of Birth *</label>
+                <input type="date" id="regDob" required>
+              </div>
+              <div class="form-group">
+                <label for="regGender">Gender *</label>
+                <select id="regGender" required>
+                  <option value="" disabled selected>Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="regAddress">Address</label>
+                <input type="text" id="regAddress" placeholder="e.g. Peddapuram, AP">
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Contact -->
+          <div class="form-section">
+            <h3 class="form-section-title"><i class="fas fa-phone-alt"></i> Emergency Contact</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="emName">Contact Name *</label>
+                <input type="text" id="emName" placeholder="e.g. Parent/Spouse name" required>
+              </div>
+              <div class="form-group">
+                <label for="emPhone">Contact Phone *</label>
+                <input type="tel" id="emPhone" placeholder="e.g. +91 9876543210" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health & Notes -->
+          <div class="form-section">
+            <h3 class="form-section-title"><i class="fas fa-notes-medical"></i> Health Information</h3>
+            <div class="form-group">
+              <label for="regHealth">Any health conditions or notes? (Optional)</label>
+              <textarea id="regHealth" rows="3" placeholder="E.g. Asthma, previous injuries, allergies..."></textarea>
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div class="form-section">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" id="regTerms" required>
+              <span class="checkmark"></span>
+              <span class="checkbox-label">I agree to the <a href="#" class="accent-link">Terms & Conditions</a> and <a href="#" class="accent-link">Privacy Policy</a> of SkyFit Gym *</span>
+            </label>
+            <div class="form-error" id="termsError">You must agree to the terms to continue</div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary btn-block btn-register" id="registerSubmitBtn">
+            <i class="fas fa-user-check"></i> Complete Registration
+          </button>
+        </form>
+
+        <!-- Success State -->
+        <div class="register-success" id="registerSuccess" style="display:none;">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h2>Welcome to SkyFit Gym!</h2>
+          <p>Your registration has been submitted successfully. Our team will contact you within 24 hours to confirm your membership and schedule your first session.</p>
+          <div class="success-details" id="successDetails"></div>
+          <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <i class="fas fa-dumbbell"></i>
+            <span>Sky<span class="accent">Fit</span></span>
+          </a>
+          <p>Transform your body and mind at the best fitness center in Peddapuram. Join our community today!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#membership">Plans</a></li>
+            <li><a href="diet.html">Diet & Nutrition</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Strength Training</a></li>
+            <li><a href="index.html#services">Weight Loss</a></li>
+            <li><a href="index.html#services">Cardio Training</a></li>
+            <li><a href="index.html#services">Personal Training</a></li>
+            <li><a href="index.html#bmi">BMI Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Peddapuram, AP – 533437</p>
+          <p><i class="fas fa-phone-alt"></i> +91 9XXXXXXXXX</p>
+          <p><i class="fas fa-envelope"></i> info@skyfitgym.com</p>
+          <p><i class="fas fa-clock"></i> Mon–Sat: 5AM – 10PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SkyFit Gym, Peddapuram. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

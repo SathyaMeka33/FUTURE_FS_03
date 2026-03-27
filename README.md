@@ -1,4 +1,3 @@
-# FUTURE_FS_03
 # SkyFit Gym Website
 
 A modern, responsive multi-page fitness website for SkyFit Gym (Peddapuram), built with plain HTML, CSS, and JavaScript.

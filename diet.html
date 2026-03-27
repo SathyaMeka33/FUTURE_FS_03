@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet & Nutrition – SkyFit Gym Peddapuram</title>
+  <meta name="description" content="Explore expert diet plans, calorie tracking, and nutrition tips at SkyFit Gym Peddapuram. Calculate your daily calories, find food nutrition info, and get personalized meal suggestions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-dumbbell"></i>
+        <span>Sky<span class="accent">Fit</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#membership" class="nav-link">Plans</a></li>
+        <li><a href="index.html#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="diet.html" class="nav-link active">Diet</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="register.html" class="nav-link">Register</a></li>
+      </ul>
+      <a href="register.html" class="nav-cta">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="diet-hero">
+    <div class="diet-hero-bg"></div>
+    <div class="diet-hero-particles"></div>
+    <div class="container">
+      <div class="diet-hero-content animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-utensils"></i> Diet & Nutrition</span>
+        <h1 class="section-title">Fuel Your <span class="accent-text">Fitness</span></h1>
+        <p class="section-desc">Discover personalized diet plans, track your nutrition, and achieve your fitness goals with expert guidance.</p>
+        <div class="diet-hero-stats">
+          <div class="diet-hero-stat">
+            <span class="diet-hero-stat-number">500+</span>
+            <span class="diet-hero-stat-label">Meal Plans</span>
+          </div>
+          <div class="diet-hero-stat-divider"></div>
+          <div class="diet-hero-stat">
+            <span class="diet-hero-stat-number">100+</span>
+            <span class="diet-hero-stat-label">Food Items</span>
+          </div>
+          <div class="diet-hero-stat-divider"></div>
+          <div class="diet-hero-stat">
+            <span class="diet-hero-stat-number">3</span>
+            <span class="diet-hero-stat-label">Goal Plans</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Diet Plans (Tabbed Interface) -->
+  <section id="diet-plans" class="diet-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-utensils"></i> Meal Plans</span>
+        <h2 class="section-title">Choose Your <span class="accent-text">Diet Plan</span></h2>
+        <p class="section-desc">Customized meal plans tailored to your fitness goals</p>
+      </div>
+      <div class="diet-tabs animate-on-scroll">
+        <button class="diet-tab active" data-tab="loss">
+          <i class="fas fa-fire"></i>
+          <span>Weight Loss</span>
+        </button>
+        <button class="diet-tab" data-tab="gain">
+          <i class="fas fa-dumbbell"></i>
+          <span>Weight Gain</span>
+        </button>
+        <button class="diet-tab" data-tab="maintain">
+          <i class="fas fa-balance-scale"></i>
+          <span>Maintenance</span>
+        </button>
+      </div>
+
+      <!-- Weight Loss -->
+      <div class="diet-tab-content active" id="tab-loss">
+        <div class="diet-plan-header animate-on-scroll">
+          <div class="diet-plan-badge loss"><i class="fas fa-fire"></i></div>
+          <div>
+            <h3>Weight Loss Plan</h3>
+            <p>Low calorie, high protein meals to burn fat while preserving muscle</p>
+          </div>
+          <div class="diet-plan-cal"><span>~1500</span> kcal/day</div>
+        </div>
+        <div class="meal-cards-grid">
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon sunrise"><i class="fas fa-sun"></i></div>
+            <div class="meal-card-time">Breakfast</div>
+            <h4>Oats + Fruits</h4>
+            <p>A bowl of oatmeal with mixed berries, banana slices, and a drizzle of honey. Rich in fiber.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 350 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 12g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon noon"><i class="fas fa-cloud-sun"></i></div>
+            <div class="meal-card-time">Lunch</div>
+            <h4>Brown Rice + Dal</h4>
+            <p>Steamed brown rice with moong dal, cucumber raita, and seasonal vegetables for nutrients.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 450 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 18g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon snack"><i class="fas fa-apple-whole"></i></div>
+            <div class="meal-card-time">Snack</div>
+            <h4>Green Tea + Almonds</h4>
+            <p>A cup of green tea with 10 almonds. Low calorie, rich in antioxidants and healthy fats.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 150 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 5g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon evening"><i class="fas fa-moon"></i></div>
+            <div class="meal-card-time">Dinner</div>
+            <h4>Salad + Paneer</h4>
+            <p>Fresh garden salad with grilled paneer cubes, olive oil dressing, and herbs.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 400 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 22g protein</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Gain -->
+      <div class="diet-tab-content" id="tab-gain">
+        <div class="diet-plan-header animate-on-scroll">
+          <div class="diet-plan-badge gain"><i class="fas fa-dumbbell"></i></div>
+          <div>
+            <h3>Weight Gain Plan</h3>
+            <p>High calorie, nutrient-dense meals for muscle building and mass gain</p>
+          </div>
+          <div class="diet-plan-cal"><span>~3000</span> kcal/day</div>
+        </div>
+        <div class="meal-cards-grid">
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon sunrise"><i class="fas fa-sun"></i></div>
+            <div class="meal-card-time">Breakfast</div>
+            <h4>Milk + Banana + Eggs</h4>
+            <p>2 whole eggs, a glass of full-fat milk, 2 bananas, and peanut butter toast for energy.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 700 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 35g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon noon"><i class="fas fa-cloud-sun"></i></div>
+            <div class="meal-card-time">Lunch</div>
+            <h4>Rice + Chicken</h4>
+            <p>Generous portion of white rice with grilled chicken breast, dal, and ghee for calories.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 850 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 45g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon snack"><i class="fas fa-apple-whole"></i></div>
+            <div class="meal-card-time">Snack</div>
+            <h4>Protein Shake + Dry Fruits</h4>
+            <p>Whey protein shake with milk, mixed dry fruits, and dark chocolate. Calorie bomb.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 550 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 30g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon evening"><i class="fas fa-moon"></i></div>
+            <div class="meal-card-time">Dinner</div>
+            <h4>Chapati + Paneer</h4>
+            <p>4 wheat chapatis with paneer butter masala, curd, and a side of sautéed vegetables.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 750 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 30g protein</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance -->
+      <div class="diet-tab-content" id="tab-maintain">
+        <div class="diet-plan-header animate-on-scroll">
+          <div class="diet-plan-badge maintain"><i class="fas fa-balance-scale"></i></div>
+          <div>
+            <h3>Maintenance Plan</h3>
+            <p>Balanced nutrition to maintain current weight and support overall health</p>
+          </div>
+          <div class="diet-plan-cal"><span>~2200</span> kcal/day</div>
+        </div>
+        <div class="meal-cards-grid">
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon sunrise"><i class="fas fa-sun"></i></div>
+            <div class="meal-card-time">Breakfast</div>
+            <h4>Idli + Chutney + Eggs</h4>
+            <p>3 idlis with coconut chutney, 2 boiled eggs, and a glass of fresh orange juice.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 500 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 22g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon noon"><i class="fas fa-cloud-sun"></i></div>
+            <div class="meal-card-time">Lunch</div>
+            <h4>Rice + Dal + Sabzi</h4>
+            <p>Regular white rice with toor dal, mixed vegetable curry, curd, and pickle.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 600 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 20g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon snack"><i class="fas fa-apple-whole"></i></div>
+            <div class="meal-card-time">Snack</div>
+            <h4>Fruit Bowl + Buttermilk</h4>
+            <p>Seasonal fruit bowl with a glass of fresh buttermilk. Light and refreshing.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 250 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 8g protein</span>
+            </div>
+          </div>
+          <div class="meal-card animate-on-scroll">
+            <div class="meal-card-icon evening"><i class="fas fa-moon"></i></div>
+            <div class="meal-card-time">Dinner</div>
+            <h4>Chapati + Chicken Curry</h4>
+            <p>3 wheat chapatis with chicken curry, salad, and a bowl of curd for digestion.</p>
+            <div class="meal-card-macros">
+              <span><i class="fas fa-fire-flame-curved"></i> 650 kcal</span>
+              <span><i class="fas fa-drumstick-bite"></i> 35g protein</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Protein Timing -->
+  <section id="protein-timing" class="diet-section diet-section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-clock"></i> Timing Matters</span>
+        <h2 class="section-title">Protein <span class="accent-text">Timing</span> Guide</h2>
+        <p class="section-desc">When you eat is just as important as what you eat</p>
+      </div>
+      <div class="timing-timeline">
+        <div class="timing-line"></div>
+        <div class="timing-card animate-on-scroll">
+          <div class="timing-dot"></div>
+          <div class="timing-card-inner">
+            <div class="timing-icon"><i class="fas fa-sun"></i></div>
+            <div class="timing-info">
+              <span class="timing-label">Morning</span>
+              <h4>After Waking Up</h4>
+              <p>Start your day with 20–30g protein to break the overnight fast and kickstart muscle protein synthesis.</p>
+              <div class="timing-foods"><span>Eggs</span><span>Milk</span><span>Greek Yogurt</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="timing-card animate-on-scroll">
+          <div class="timing-dot"></div>
+          <div class="timing-card-inner">
+            <div class="timing-icon"><i class="fas fa-bolt"></i></div>
+            <div class="timing-info">
+              <span class="timing-label">Pre-Workout</span>
+              <h4>30–60 Minutes Before</h4>
+              <p>Fuel your workout with a mix of protein and carbs for sustained energy and performance.</p>
+              <div class="timing-foods"><span>Banana</span><span>Oats</span><span>Peanut Butter</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="timing-card highlight animate-on-scroll">
+          <div class="timing-dot"></div>
+          <div class="timing-card-inner">
+            <div class="timing-icon"><i class="fas fa-trophy"></i></div>
+            <div class="timing-info">
+              <span class="timing-label">Post-Workout</span>
+              <span class="timing-badge">Most Important</span>
+              <h4>Within 30–45 Minutes</h4>
+              <p>The anabolic window! Consume 30–40g protein with fast carbs for maximum recovery and muscle growth.</p>
+              <div class="timing-foods"><span>Whey Protein</span><span>Chicken</span><span>Rice</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="timing-card animate-on-scroll">
+          <div class="timing-dot"></div>
+          <div class="timing-card-inner">
+            <div class="timing-icon"><i class="fas fa-moon"></i></div>
+            <div class="timing-info">
+              <span class="timing-label">Before Bed</span>
+              <h4>Recovery Window</h4>
+              <p>Slow-digesting protein (casein) supports overnight muscle recovery and prevents catabolism.</p>
+              <div class="timing-foods"><span>Paneer</span><span>Milk</span><span>Cottage Cheese</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Food Calorie Finder -->
+  <section id="calorie-finder" class="diet-section">
+    <div class="container">
+      <div class="diet-split-grid">
+        <div class="animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-search"></i> Food Lookup</span>
+          <h2 class="section-title" style="text-align:left;">Food Calories <span class="accent-text">Finder</span></h2>
+          <p class="diet-split-desc">Search for any food item to instantly find its nutritional value per 100g serving. Our database covers all common Indian and international foods.</p>
+          <div class="calorie-search-box">
+            <div class="calorie-input-wrapper">
+              <i class="fas fa-search"></i>
+              <input type="text" id="foodSearch" placeholder="Search food... e.g. egg, rice, chicken" autocomplete="off">
+              <button type="button" id="foodSearchBtn" class="calorie-search-btn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="food-suggestions" id="foodSuggestions"></div>
+          </div>
+          <div class="calorie-result" id="calorieResult" style="display:none;">
+            <div class="calorie-result-icon"><i class="fas fa-fire-flame-curved"></i></div>
+            <div class="calorie-result-info">
+              <h4 id="calorieFood"></h4>
+              <div class="calorie-result-value"><span id="calorieValue"></span> kcal <small>per 100g</small></div>
+            </div>
+            <div class="calorie-result-bar">
+              <div class="calorie-bar-fill" id="calorieBar"></div>
+            </div>
+          </div>
+          <div class="calorie-not-found" id="calorieNotFound" style="display:none;">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>Food not found. Try another item.</span>
+          </div>
+        </div>
+        <div class="calorie-popular animate-on-scroll">
+          <h4><i class="fas fa-star"></i> Popular Foods</h4>
+          <div class="popular-foods-grid" id="popularFoods">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Daily Calorie Calculator -->
+  <section id="calorie-calc" class="diet-section diet-section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-calculator"></i> Smart Calculator</span>
+        <h2 class="section-title">Daily Calorie <span class="accent-text">Calculator</span></h2>
+        <p class="section-desc">Calculate your daily calorie needs based on your body metrics and fitness goal</p>
+      </div>
+      <div class="calc-grid">
+        <div class="calc-form-card animate-on-scroll">
+          <form id="calorieCalcForm">
+            <div class="calc-form-grid">
+              <div class="form-group">
+                <label for="calcWeight"><i class="fas fa-weight-hanging"></i> Weight (kg)</label>
+                <input type="number" id="calcWeight" placeholder="e.g. 70" min="20" max="300" required>
+              </div>
+              <div class="form-group">
+                <label for="calcHeight"><i class="fas fa-ruler-vertical"></i> Height (cm)</label>
+                <input type="number" id="calcHeight" placeholder="e.g. 175" min="100" max="250" required>
+              </div>
+              <div class="form-group">
+                <label for="calcAge"><i class="fas fa-birthday-cake"></i> Age</label>
+                <input type="number" id="calcAge" placeholder="e.g. 25" min="10" max="100" required>
+              </div>
+              <div class="form-group">
+                <label for="calcGoal"><i class="fas fa-bullseye"></i> Goal</label>
+                <select id="calcGoal" required>
+                  <option value="" disabled selected>Select your goal</option>
+                  <option value="loss">Weight Loss</option>
+                  <option value="gain">Weight Gain</option>
+                  <option value="maintain">Maintenance</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-calculator"></i> Calculate Calories
+            </button>
+          </form>
+        </div>
+        <div class="calc-result-card animate-on-scroll" id="calcResultCard">
+          <div class="calc-result-empty" id="calcEmpty">
+            <div class="calc-empty-icon"><i class="fas fa-chart-pie"></i></div>
+            <p>Enter your details and click calculate to see your personalized calorie breakdown</p>
+          </div>
+          <div class="calc-result-filled" id="calcFilled" style="display:none;">
+            <div class="calc-result-circle">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" stroke="rgba(255,255,255,0.06)" stroke-width="8" fill="none"/>
+                <circle cx="60" cy="60" r="52" stroke="var(--accent)" stroke-width="8" fill="none" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" id="calcCircle" style="transition: stroke-dashoffset 1.5s ease;"/>
+              </svg>
+              <div class="calc-result-number">
+                <span id="calcCalories">0</span>
+                <small>kcal/day</small>
+              </div>
+            </div>
+            <h4 id="calcGoalLabel">Your Daily Intake</h4>
+            <div class="calc-result-macros">
+              <div class="calc-macro">
+                <span class="calc-macro-value" id="calcProtein">0g</span>
+                <span class="calc-macro-label">Protein</span>
+              </div>
+              <div class="calc-macro">
+                <span class="calc-macro-value" id="calcCarbs">0g</span>
+                <span class="calc-macro-label">Carbs</span>
+              </div>
+              <div class="calc-macro">
+                <span class="calc-macro-value" id="calcFats">0g</span>
+                <span class="calc-macro-label">Fats</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Macro Breakdown -->
+  <section id="macros" class="diet-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-chart-bar"></i> Nutrition Breakdown</span>
+        <h2 class="section-title">Macro <span class="accent-text">Distribution</span></h2>
+        <p class="section-desc">Understanding the right balance of macronutrients is key to any diet</p>
+      </div>
+      <div class="macro-cards-grid">
+        <div class="macro-card animate-on-scroll">
+          <div class="macro-card-header protein-bg">
+            <i class="fas fa-drumstick-bite"></i>
+            <span class="macro-percentage">30%</span>
+          </div>
+          <h4>Protein</h4>
+          <p>Essential for muscle repair, growth, and maintaining lean body mass.</p>
+          <div class="macro-bar-wrapper">
+            <div class="macro-bar">
+              <div class="macro-bar-fill protein-fill" style="--target-width: 30%;"></div>
+            </div>
+          </div>
+          <div class="macro-food-tags">
+            <span>Chicken</span><span>Eggs</span><span>Paneer</span><span>Dal</span>
+          </div>
+        </div>
+        <div class="macro-card animate-on-scroll">
+          <div class="macro-card-header carbs-bg">
+            <i class="fas fa-seedling"></i>
+            <span class="macro-percentage">50%</span>
+          </div>
+          <h4>Carbs</h4>
+          <p>Your body's primary energy source for workouts and daily activities.</p>
+          <div class="macro-bar-wrapper">
+            <div class="macro-bar">
+              <div class="macro-bar-fill carbs-fill" style="--target-width: 50%;"></div>
+            </div>
+          </div>
+          <div class="macro-food-tags">
+            <span>Rice</span><span>Oats</span><span>Chapati</span><span>Fruits</span>
+          </div>
+        </div>
+        <div class="macro-card animate-on-scroll">
+          <div class="macro-card-header fats-bg">
+            <i class="fas fa-droplet"></i>
+            <span class="macro-percentage">20%</span>
+          </div>
+          <h4>Fats</h4>
+          <p>Crucial for hormone production, brain function, and nutrient absorption.</p>
+          <div class="macro-bar-wrapper">
+            <div class="macro-bar">
+              <div class="macro-bar-fill fats-fill" style="--target-width: 20%;"></div>
+            </div>
+          </div>
+          <div class="macro-food-tags">
+            <span>Nuts</span><span>Ghee</span><span>Olive Oil</span><span>Avocado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Smart Suggestions -->
+  <section id="smart-suggestions" class="diet-section diet-section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-brain"></i> AI Suggestions</span>
+        <h2 class="section-title">Smart Food <span class="accent-text">Suggestions</span></h2>
+        <p class="section-desc">Select your fitness goal and get personalized food recommendations</p>
+      </div>
+      <div class="suggestion-selector animate-on-scroll">
+        <button class="suggestion-btn active" data-goal="loss">
+          <i class="fas fa-fire"></i> Weight Loss
+        </button>
+        <button class="suggestion-btn" data-goal="gain">
+          <i class="fas fa-dumbbell"></i> Weight Gain
+        </button>
+        <button class="suggestion-btn" data-goal="maintain">
+          <i class="fas fa-balance-scale"></i> Maintenance
+        </button>
+      </div>
+      <div class="suggestion-grid" id="suggestionGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Nutrition Tips -->
+  <section id="nutrition-tips" class="diet-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-lightbulb"></i> Pro Tips</span>
+        <h2 class="section-title">Nutrition <span class="accent-text">Tips</span></h2>
+        <p class="section-desc">Essential habits to supercharge your fitness results</p>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card animate-on-scroll">
+          <div class="tip-number">01</div>
+          <div class="tip-icon"><i class="fas fa-glass-water"></i></div>
+          <h4>Stay Hydrated</h4>
+          <p>Drink 3–4 liters of water daily. Proper hydration boosts metabolism and improves recovery.</p>
+        </div>
+        <div class="tip-card animate-on-scroll">
+          <div class="tip-number">02</div>
+          <div class="tip-icon"><i class="fas fa-ban"></i></div>
+          <h4>Avoid Junk Food</h4>
+          <p>Cut processed foods, sugary drinks, and deep-fried snacks. Replace with wholesome alternatives.</p>
+        </div>
+        <div class="tip-card animate-on-scroll">
+          <div class="tip-number">03</div>
+          <div class="tip-icon"><i class="fas fa-clock"></i></div>
+          <h4>Eat Every 3–4 Hours</h4>
+          <p>Small, frequent meals keep your metabolism active and prevent overeating at any single meal.</p>
+        </div>
+        <div class="tip-card animate-on-scroll">
+          <div class="tip-number">04</div>
+          <div class="tip-icon"><i class="fas fa-drumstick-bite"></i></div>
+          <h4>Maintain Protein Intake</h4>
+          <p>Aim for 1.6–2.2g of protein per kg of body weight to support muscle growth and repair.</p>
+        </div>
+        <div class="tip-card animate-on-scroll">
+          <div class="tip-number">05</div>
+          <div class="tip-icon"><i class="fas fa-bed"></i></div>
+          <h4>Sleep Well</h4>
+          <p>7–8 hours of quality sleep is essential for hormone balance and muscle recovery.</p>
+        </div>
+        <div class="tip-card animate-on-scroll">
+          <div class="tip-number">06</div>
+          <div class="tip-icon"><i class="fas fa-chart-line"></i></div>
+          <h4>Track Your Progress</h4>
+          <p>Keep a food journal or use apps to monitor your intake and make data-driven adjustments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="diet-cta-section">
+    <div class="container">
+      <div class="diet-cta animate-on-scroll">
+        <h2>Ready to Transform Your <span class="accent-text">Nutrition</span>?</h2>
+        <p>Join SkyFit Gym and get personalized diet plans from our certified nutritionists.</p>
+        <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Join Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <i class="fas fa-dumbbell"></i>
+            <span>Sky<span class="accent">Fit</span></span>
+          </a>
+          <p>Transform your body and mind at the best fitness center in Peddapuram. Join our community today!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#membership">Plans</a></li>
+            <li><a href="diet.html">Diet & Nutrition</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Strength Training</a></li>
+            <li><a href="index.html#services">Weight Loss</a></li>
+            <li><a href="index.html#services">Cardio Training</a></li>
+            <li><a href="index.html#services">Personal Training</a></li>
+            <li><a href="index.html#bmi">BMI Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Peddapuram, AP – 533437</p>
+          <p><i class="fas fa-phone-alt"></i> +91 9XXXXXXXXX</p>
+          <p><i class="fas fa-envelope"></i> info@skyfitgym.com</p>
+          <p><i class="fas fa-clock"></i> Mon–Sat: 5AM – 10PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SkyFit Gym, Peddapuram. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

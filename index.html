@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyFit Gym – Peddapuram | Transform Your Body</title>
+  <meta name="description" content="SkyFit Gym is the best fitness center in Peddapuram, Andhra Pradesh. Join us for strength training, cardio, personal training, and more. Affordable plans starting at ₹1000/month.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <span class="loader-text">SKYFIT</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <i class="fas fa-dumbbell"></i>
+        <span>Sky<span class="accent">Fit</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#membership" class="nav-link">Plans</a></li>
+        <li><a href="#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="index.html#bmi" class="nav-link">BMI</a></li>
+        <li><a href="diet.html" class="nav-link">Diet</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="register.html" class="nav-link">Register</a></li>
+      </ul>
+      <a href="register.html" class="nav-cta">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge animate-on-scroll">
+            <i class="fas fa-bolt"></i>
+            <span>Best gym place</span>
+          </div>
+          <h1 class="hero-title animate-on-scroll">
+            Transform Your Body at <span class="accent-text">SkyFit Gym</span>
+          </h1>
+          <p class="hero-subtitle animate-on-scroll">
+            Turn your body into fit and healthy with gym and exercise with us here. Join the best gym in Peddapuram with expert trainers.
+          </p>
+          <div class="hero-buttons animate-on-scroll">
+            <a href="#membership" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> Get Started
+            </a>
+            <button class="btn-play" id="bookTrialBtn">
+              <span class="play-circle"><i class="fas fa-play"></i></span>
+              <span>Book Free Trial</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero-image-wrapper animate-on-scroll">
+          <div class="hero-image-bg"></div>
+          <img src="images/hero-trainer.png" alt="SkyFit Gym Trainer">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="hero-stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item animate-on-scroll">
+        <span class="stat-number" data-count="500">0</span><span style="font-size:40px;font-weight:800;">+</span>
+        <span class="stat-label">Members</span>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <span class="stat-number" data-count="125">0</span><span style="font-size:40px;font-weight:800;">+</span>
+        <span class="stat-label">Partners</span>
+      </div>
+      <a href="#membership" class="stats-circle">
+        <div class="stats-circle-text">
+          <svg viewBox="0 0 130 130">
+            <path id="circlePath" d="M 65,65 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" fill="none"/>
+            <text>
+              <textPath href="#circlePath">SkyFit Gym • Get Started • The best •&nbsp;</textPath>
+            </text>
+          </svg>
+        </div>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+      <div class="stat-item animate-on-scroll">
+        <span class="stat-number" data-count="5">0</span><span style="font-size:40px;font-weight:800;">+</span>
+        <span class="stat-label">Best Coach</span>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <span class="stat-number" data-count="100">0</span><span style="font-size:40px;font-weight:800;">+</span>
+        <span class="stat-label">Appreciation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h3>Modern Equipment</h3>
+          <p>State-of-the-art machines and free weights for every workout style</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon orange">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Certified Trainers</h3>
+          <p>Expert coaches to guide your fitness journey with personalized plans</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <i class="fas fa-tags"></i>
+          </div>
+          <h3>Affordable Plans</h3>
+          <p>Premium fitness experience at prices that won't break the bank</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon orange">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Flexible Hours</h3>
+          <p>Open early morning to late night, fitting your busy schedule</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll">
+          <img src="images/about.png" alt="SkyFit Gym Interior">
+          <div class="about-image-overlay">
+            <div class="experience-badge">
+              <span class="exp-number">6+</span>
+              <span class="exp-text">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-info-circle"></i> About Us</span>
+          <h2 class="section-title">We Are <span class="accent-text">SkyFit Gym</span></h2>
+          <p class="about-text">
+            SkyFit Gym is a modern fitness center helping people achieve their health goals since 2019. Located in the heart of Peddapuram, we combine cutting-edge equipment with expert guidance to deliver results that transform lives.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-bullseye"></i></div>
+              <div>
+                <h4>Our Mission</h4>
+                <p>To make fitness accessible, enjoyable, and life-changing for everyone in Peddapuram and beyond.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-eye"></i></div>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To be the most trusted and inspiring fitness community in Andhra Pradesh.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#services" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-cogs"></i> What We Offer</span>
+        <h2 class="section-title">Our <span class="accent-text">Services</span></h2>
+        <p class="section-desc">Comprehensive fitness programs designed to help you reach your goals</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-dumbbell"></i></div>
+          <div class="service-number">01</div>
+          <h3>Strength Training</h3>
+          <p>Build muscle, increase power, and boost your metabolism with our comprehensive strength programs and free weight area.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon orange"><i class="fas fa-fire-flame-curved"></i></div>
+          <div class="service-number">02</div>
+          <h3>Weight Loss Programs</h3>
+          <p>Scientifically designed programs combining cardio, diet guidance, and accountability coaching to shed fat effectively.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="service-number">03</div>
+          <h3>Cardio Training</h3>
+          <p>Improve endurance and heart health with our treadmills, ellipticals, cycling machines, and group cardio sessions.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon orange"><i class="fas fa-user-check"></i></div>
+          <div class="service-number">04</div>
+          <h3>Personal Training</h3>
+          <p>One-on-one coaching tailored to your goals, fitness level, and schedule with our certified personal trainers.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section id="membership" class="membership">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-crown"></i> Membership Plans</span>
+        <h2 class="section-title">Choose Your <span class="accent-text">Plan</span></h2>
+        <p class="section-desc">Affordable plans for every fitness goal and budget</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-header">
+            <span class="plan-name">Monthly</span>
+            <div class="plan-price">
+              <span class="currency">₹</span>
+              <span class="amount">1000</span>
+              <span class="period">/month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Full gym access</li>
+            <li><i class="fas fa-check"></i> Locker room access</li>
+            <li><i class="fas fa-check"></i> Basic fitness assessment</li>
+            <li><i class="fas fa-check"></i> Group classes</li>
+            <li class="disabled"><i class="fas fa-times"></i> Personal trainer</li>
+            <li class="disabled"><i class="fas fa-times"></i> Diet consultation</li>
+          </ul>
+          <a href="register.html?plan=monthly" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+        <div class="pricing-card popular animate-on-scroll">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <span class="plan-name">Quarterly</span>
+            <div class="plan-price">
+              <span class="currency">₹</span>
+              <span class="amount">2500</span>
+              <span class="period">/3 months</span>
+            </div>
+            <span class="plan-savings">Save ₹500</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Full gym access</li>
+            <li><i class="fas fa-check"></i> Locker room access</li>
+            <li><i class="fas fa-check"></i> Detailed fitness assessment</li>
+            <li><i class="fas fa-check"></i> Group classes</li>
+            <li><i class="fas fa-check"></i> 2 personal trainer sessions</li>
+            <li class="disabled"><i class="fas fa-times"></i> Diet consultation</li>
+          </ul>
+          <a href="register.html?plan=quarterly" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-header">
+            <span class="plan-name">Yearly</span>
+            <div class="plan-price">
+              <span class="currency">₹</span>
+              <span class="amount">8000</span>
+              <span class="period">/year</span>
+            </div>
+            <span class="plan-savings">Save ₹4000</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Full gym access</li>
+            <li><i class="fas fa-check"></i> Locker room access</li>
+            <li><i class="fas fa-check"></i> Complete fitness assessment</li>
+            <li><i class="fas fa-check"></i> Unlimited group classes</li>
+            <li><i class="fas fa-check"></i> Monthly personal trainer sessions</li>
+            <li><i class="fas fa-check"></i> Diet consultation included</li>
+          </ul>
+          <a href="register.html?plan=yearly" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section id="trainers" class="trainers">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-users"></i> Expert Team</span>
+        <h2 class="section-title">Meet Our <span class="accent-text">Trainers</span></h2>
+        <p class="section-desc">Certified professionals dedicated to your fitness success</p>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-image">
+            <img src="images/trainer1.png" alt="Trainer Ravi Kumar">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Ravi Kumar</h3>
+            <span class="trainer-role">Strength & Conditioning Coach</span>
+            <div class="trainer-meta">
+              <span><i class="fas fa-trophy"></i> 8+ Years Exp.</span>
+              <span><i class="fas fa-star"></i> NSCA Certified</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-image">
+            <img src="images/trainer2.png" alt="Trainer Priya Sharma">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Priya Sharma</h3>
+            <span class="trainer-role">Cardio & Weight Loss Specialist</span>
+            <div class="trainer-meta">
+              <span><i class="fas fa-trophy"></i> 5+ Years Exp.</span>
+              <span><i class="fas fa-star"></i> ACE Certified</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-image">
+            <img src="images/trainer3.png" alt="Trainer Arjun Reddy">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Arjun Reddy</h3>
+            <span class="trainer-role">Personal Training Expert</span>
+            <div class="trainer-meta">
+              <span><i class="fas fa-trophy"></i> 6+ Years Exp.</span>
+              <span><i class="fas fa-star"></i> ISSA Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-images"></i> Our Space</span>
+        <h2 class="section-title">Gym <span class="accent-text">Gallery</span></h2>
+        <p class="section-desc">Take a virtual tour of our world-class facility</p>
+      </div>
+      <div class="gallery-grid animate-on-scroll">
+        <div class="gallery-item large">
+          <img src="images/gallery1.png" alt="Strength Training Area" loading="lazy">
+          <div class="gallery-item-overlay"><span>Strength Zone</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery2.png" alt="Cardio Section" loading="lazy">
+          <div class="gallery-item-overlay"><span>Cardio Area</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery3.png" alt="Free Weights" loading="lazy">
+          <div class="gallery-item-overlay"><span>Free Weights</span></div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="images/gallery4.png" alt="Personal Training" loading="lazy">
+          <div class="gallery-item-overlay"><span>Training Zone</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery5.png" alt="Yoga Studio" loading="lazy">
+          <div class="gallery-item-overlay"><span>Yoga Studio</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hero.png" alt="Main Gym Floor" loading="lazy">
+          <div class="gallery-item-overlay"><span>Main Floor</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-quote-left"></i> Testimonials</span>
+        <h2 class="section-title">What Members <span class="accent-text">Say</span></h2>
+      </div>
+      <div class="testimonial-carousel animate-on-scroll" id="testimonialCarousel">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"SkyFit Gym transformed my life! Lost 15kg in 4 months with incredible trainer support. The equipment is top-notch and the atmosphere is so motivating."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SK</div>
+              <div>
+                <h4>Sai Krishna</h4>
+                <span>Member since 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Best gym in Peddapuram! The trainers are extremely knowledgeable and friendly. Love the clean environment and modern equipment."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">ML</div>
+              <div>
+                <h4>Mounika Lakshmi</h4>
+                <span>Member since 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">"I joined SkyFit for personal training and the results have been amazing. Gained 8kg of muscle in 6 months. Worth every rupee!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">VR</div>
+              <div>
+                <h4>Venkat Rao</h4>
+                <span>Member since 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"As a woman, I felt very comfortable training here. The staff is respectful and the separate training area for women is a great touch!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DS</div>
+              <div>
+                <h4>Divya Sree</h4>
+                <span>Member since 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section id="bmi" class="bmi-section">
+    <div class="container">
+      <div class="bmi-grid">
+        <div class="bmi-info animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-calculator"></i> Health Tool</span>
+          <h2 class="section-title">BMI <span class="accent-text">Calculator</span></h2>
+          <p>Calculate your Body Mass Index to understand where you stand. Your BMI helps determine if you're underweight, normal, overweight, or obese.</p>
+          <div class="bmi-chart">
+            <div class="bmi-range underweight"><span>Under 18.5</span><span>Underweight</span></div>
+            <div class="bmi-range normal"><span>18.5 – 24.9</span><span>Normal</span></div>
+            <div class="bmi-range overweight"><span>25 – 29.9</span><span>Overweight</span></div>
+            <div class="bmi-range obese"><span>30+</span><span>Obese</span></div>
+          </div>
+        </div>
+        <div class="bmi-calculator animate-on-scroll">
+          <form id="bmiForm" class="bmi-form">
+            <div class="form-group">
+              <label for="bmiHeight">Height (cm)</label>
+              <input type="number" id="bmiHeight" placeholder="e.g. 175" required min="50" max="300">
+            </div>
+            <div class="form-group">
+              <label for="bmiWeight">Weight (kg)</label>
+              <input type="number" id="bmiWeight" placeholder="e.g. 70" required min="10" max="500">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-calculator"></i> Calculate BMI
+            </button>
+          </form>
+          <div class="bmi-result" id="bmiResult" style="display:none;">
+            <div class="bmi-value" id="bmiValue"></div>
+            <div class="bmi-category" id="bmiCategory"></div>
+            <div class="bmi-message" id="bmiMessage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fas fa-envelope"></i> Get in Touch</span>
+        <h2 class="section-title">Contact <span class="accent-text">Us</span></h2>
+        <p class="section-desc">Ready to start? Reach out and we'll help you begin your fitness journey</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Our Location</h4>
+              <p>Peddapuram, Andhra Pradesh – 533437</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone Number</h4>
+              <p>+91 9XXXXXXXXX</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email Address</h4>
+              <p>info@skyfitgym.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon–Sat: 5:00 AM – 10:00 PM<br>Sunday: 6:00 AM – 12:00 PM</p>
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30528.70752938!2d82.1164!3d17.0741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a5db8a4a0e29%3A0x4d4e69b2a39c2db3!2sPeddapuram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="200" style="border:0; border-radius: 12px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SkyFit Gym Location"></iframe>
+          </div>
+        </div>
+        <div class="contact-form-wrapper animate-on-scroll">
+          <form id="contactForm" class="contact-form">
+            <h3>Send us a Message</h3>
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" placeholder="+91 9XXXXXXXXX">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="4" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Free Trial Modal -->
+  <div class="modal-overlay" id="trialModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <h3><i class="fas fa-calendar-check"></i> Book Your Free Trial</h3>
+      <p>Experience SkyFit Gym for free! Fill in your details and we'll schedule your trial session.</p>
+      <form id="trialForm">
+        <div class="form-group">
+          <label for="trialName">Full Name</label>
+          <input type="text" id="trialName" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="trialPhone">Phone Number</label>
+          <input type="tel" id="trialPhone" placeholder="+91 9XXXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="trialDate">Preferred Date</label>
+          <input type="date" id="trialDate" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fas fa-check"></i> Book Trial
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#home" class="footer-logo">
+            <i class="fas fa-dumbbell"></i>
+            <span>Sky<span class="accent">Fit</span></span>
+          </a>
+          <p>Transform your body and mind at the best fitness center in Peddapuram. Join our community today!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#membership">Plans</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="diet.html">Diet & Nutrition</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Strength Training</a></li>
+            <li><a href="#services">Weight Loss</a></li>
+            <li><a href="#services">Cardio Training</a></li>
+            <li><a href="#services">Personal Training</a></li>
+            <li><a href="#bmi">BMI Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Peddapuram, AP – 533437</p>
+          <p><i class="fas fa-phone-alt"></i> +91 9XXXXXXXXX</p>
+          <p><i class="fas fa-envelope"></i> info@skyfitgym.com</p>
+          <p><i class="fas fa-clock"></i> Mon–Sat: 5AM – 10PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SkyFit Gym, Peddapuram. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
